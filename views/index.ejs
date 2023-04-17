@@ -1,0 +1,61 @@
+ <html>
+      <head>
+        <title>XLSX Data</title>
+        <style>
+                table, th, td {
+                border: 1px solid white;
+                border-collapse: collapse;
+                }
+                th, td {
+                background-color: #96D4D4;
+                }
+                    div.container {
+                    display:inline-block;
+                    }
+
+                    p {
+                    text-align:center;
+                    }
+
+                table, th, td {
+                border: 8px solid black;
+                padding: 5px;
+                text-align: center;
+                
+                }
+        </style>
+      </head>
+      <body>
+            <div class="container"><img src="" height="400" width="400" /></div>
+            <div class="container"><img src="" height="400" width="400" /></div>
+            <div class="container"><img src="" height="400" width="400" /></div>
+            <div class="container"><img src="" height="400" width="400" /></div>
+            <div class="container"><img src="" height="400" width="400" /></div>
+            <div class="container"><img src="" height="400" width="400" /></div>
+            <div class="container"><img src="" height="400" width="400" /></div>
+            <div class="container"><img src="" height="400" width="400" /></div>
+            <div class="container"><img src="" height="400" width="400" /></div>
+            <div class="container"><img src="" height="400" width="400" /></div>
+            <div class="container"><img src="" height="400" width="400" /></div>
+            <div class="container"><img src="" height="400" width="400" /></div>
+    <table>
+              <thead>
+        <tr>
+          <th>Login</th>
+          <th>Reason Code</th>
+          <th>Remarks</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% data.forEach(function(row) { %>
+          <tr>
+            <td><%= row.Login %></td>
+            <td><%= row.ReasonCode %></td>
+            <td><%= row.Remarks %></td>
+          </tr>
+        <% }); %>
+      </tbody>
+    </table>
+    <hr><hr>
+      </body>
+    </html>
